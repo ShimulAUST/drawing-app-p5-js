@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="lib/p5.min.js"></script>
+  <script src="lib/p5.dom.js"></script>
+
+  <script src="sketch.js"></script>
+
+  <!-- add extra scripts below -->
+  <script src="toolbox.js"></script>
+  <script src="colourPalette.js"></script>
+  <script src="helperFunctions.js"></script>
+
+  <script src="freehandTool.js"></script>
+  <script src="lineToTool.js"></script>
+  <script src="sprayCanTool.js"></script>
+  <script src="mirrorDrawTool.js"></script>
+  <script src="erase.js"></script>
+  <script src="brush.js"></script>
+  <script src="paintBucket.js"></script>
+  <script src="lineCurve.js"></script>
+   <script src="textInput.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box header">My Drawing App
+    
+      <button id="clearButton">Clear</button>
+      <button id="saveImageButton">Save Image</button>
+      <select name="shapes" id="shapes">
+      <option value="">Select shape</option>
+        <option value="ellipse">Ellipse</option>
+        <option value="triangle">Triangle</option>
+        <option value="rectangle">Rectangle</option>
+        
+      </select>
+    </div>
+    <div class="box" id="sidebar"></div>
+    <div id="content"></div>
+    <div class="box colourPalette"></div>
+    <div class="box options">
+      
+    </div>
+    
+  </div>
+</body>
+
+</html>
